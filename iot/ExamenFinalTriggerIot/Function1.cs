@@ -21,7 +21,7 @@ namespace ExamenFinalTriggerIot
         [FunctionName("Function1")]
         public static void Run([IoTHubTrigger("messages/events", Connection = "ConnectionString")]EventData message, ILogger log)
         {
-            //log.LogInformation($"C# IoT Hub trigger function processed a message: {Encoding.UTF8.GetString(message.Body.Array)}");
+            log.LogInformation($"C# IoT Hub trigger function processed a message: {Encoding.UTF8.GetString(message.Body.Array)}");
             var data = JsonConvert.DeserializeObject<TempHum>(Encoding.UTF8.GetString(message.Body.Array));
             var datos = new TempHum
             {
