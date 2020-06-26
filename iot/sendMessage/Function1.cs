@@ -33,7 +33,6 @@ namespace sendMessage
 
                 Console.WriteLine("Send Cloud-to-Device message\n");
 
-
                 string variable = Environment.GetEnvironmentVariable("StrIot");
                 _serviceClient = ServiceClient.CreateFromConnectionString(variable);
 

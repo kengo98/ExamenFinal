@@ -21,7 +21,6 @@ namespace ObtenerDatos
                 ConnectionStringSetting = "StrCosmos",
                 SqlQuery ="SELECT top 10 * FROM c order by c._ts desc")] IEnumerable<TempHum> datos,
             ILogger log)
-
         {
             if (datos == null)
             {

@@ -41,7 +41,6 @@ namespace ExamenFinalTriggerIot
             };
             await Insert(datos);
         }
-
         private static async Task<IActionResult> Insert(TempHum a)
         {
             IActionResult returnValue = null;
