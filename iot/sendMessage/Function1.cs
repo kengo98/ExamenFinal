@@ -53,6 +53,7 @@ namespace sendMessage
             var commandMessage = new
              Message(Encoding.ASCII.GetBytes(mensaje));
             await _serviceClient.SendAsync("sensorTemperaturaKengo", commandMessage);
+
         }
     }
 }
